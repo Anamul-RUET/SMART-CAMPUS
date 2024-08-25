@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bkg_image"
+    android:gravity="center"
+    tools:context=".AdminLogin">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/first"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        app:cardCornerRadius="25dp"
+        android:elevation="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Login:"
+                android:textSize="35sp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textStyle="bold"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="User ID"
+                android:padding="15dp"
+                android:id="@+id/userId"
+                android:drawableLeft="@drawable/baseline_person_24">
+
+            </EditText>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:padding="15dp"
+                android:id="@+id/name"
+                android:drawableLeft="@drawable/baseline_person_24">
+
+            </EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Roll No."
+                android:id="@+id/rollNo"
+                android:padding="15dp"
+                android:drawableLeft="@drawable/baseline_lock_24">
+
+            </EditText>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textSize="25sp"
+                android:padding="10dp"
+                android:id="@+id/button">
+
+            </Button>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

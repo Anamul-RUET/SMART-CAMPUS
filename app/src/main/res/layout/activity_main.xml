@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/pink"
+    tools:context=".MainActivity">
+
+<com.google.android.material.card.MaterialCardView
+    android:layout_width="350dp"
+    android:layout_height="300dp"
+    app:cardCornerRadius="10dp"
+    android:elevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose your role:"
+            android:textSize="40dp">
+
+        </TextView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@color/lightGray">
+
+        </View>
+        <Button
+            android:id="@+id/admin"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:text="Admin"
+            android:textSize="35sp">
+
+        </Button>
+        <Button
+            android:id="@+id/user"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:text="User"
+            android:textSize="35sp">
+
+        </Button>
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>
